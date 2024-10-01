@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-part-1">
+            <div class="menu-button" id="menuButton">
+                <img src="./images/icon-menu.svg" alt="Menu Icon">
+            </div>
+
+        <div class="logo"><img src="./images/logo.svg"></div>
+        <nav>
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        </div>
+        <div class="header-part-2">
+            <div class="item-count" style="display: none;"><p id="item-count" style="display: none;">thr</p></div>
+            <div class="cart">
+                <img src="./images/icon-cart.svg" alt="Cart Icon" id="cartIcon">
+                <div class="cart-dropdown" style="display: none;">
+                    <p class="cart-heading">Cart</p>
+                    
+                    
+                    <div class="cart-together">
+                    <img src="./images/image-product-1.jpg" id="cart-image" style="display: none;">
+                    <div class="cart-stat-sum">
+                    <p id="cart-status">Your cart is empty.</p>
+                    <p id="cart-summary" style="display: none;"> <span id="price" style="display: none;"> </span></p>
+                   </div>
+                    <button id="delete-btn" style="display: none;"> 
+                        <img src="./images/icon-delete.svg" alt="Delete Icon" id="deleteIcon">
+                    </button>
+                   
+                    </div>
+                    <button id="checkout-btn" style="display: none;">Checkout</button>
+                    
+                </div>
+            </div>
+        <div class="user-profile">
+            <img src="./images/image-avatar.png" alt="User Icon">
+        </div>
+    </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-sidebar" id="closeSidebar">
+            <img src="./images/icon-close.svg" alt="Close Icon">
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <hr id="line-separator">
+
+
+
+
+
+
+
+    <main>
+        <div class="product">
+            <div class="product-image">
+                <div class="main-image">
+                    <img id="mainImage" src="./images/image-product-1.jpg" alt="Fall Limited Sneakers">
+                </div>
+                <div class="thumbnails">
+                    <img class="thumbnail active" src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" data-image="./images/image-product-1.jpg">
+                    <img class="thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" data-image="./images/image-product-2.jpg">
+                    <img class="thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" data-image="./images/image-product-3.jpg">
+                    <img class="thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" data-image="./images/image-product-4.jpg">
+                </div>
+            </div>
+            <div class="product-details">
+                <h4>SNEAKER COMPANY</h4>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p class="product-description">
+                    These low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber outer sole, they'll withstand everything
+                    the weather can offer.
+                </p>
+                <div class="price">
+                    <div>
+                    <span class="current-price">$125.00</span>
+                    <span class="discount">50%</span>
+                </div>
+                    <div><span class="original-price">$250.00</span></div>
+                </div>
+                <div class="quantity-selector-main">
+                <div class="quantity-selector">
+                    <button id="decrease"><img src="./images/icon-minus.svg"></button>
+                    <input type="text" id="quantity" value="0">
+                    <button id="increase"><img src="./images/icon-plus.svg"></button>
+                </div>
+                <button class="add-to-cart" id="addToCartBtn"><img src="./images/icon-cart.svg" > Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="carousel" class="carousel">
+        <span class="close" id="closeBtn"><img src="./images/icon-close.svg" alt="Close"></span>
+        <span class="prev" id="prevBtn"><img src="./images/icon-previous.svg" alt="Prev"></span>
+        <img id="carouselImage" src="" alt="Fullscreen Image">
+        <span class="next" id="nextBtn"><img src="./images/icon-next.svg" alt="Next"></span>
+        <div class="carousel-thumbnails">
+            <img class="carousel-thumbnail active" data-image="./images/image-product-1.jpg" src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1">
+            <img class="carousel-thumbnail" data-image="./images/image-product-2.jpg" src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2">
+            <img class="carousel-thumbnail" data-image="./images/image-product-3.jpg" src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3">
+            <img class="carousel-thumbnail" data-image="./images/image-product-4.jpg" src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4">
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
