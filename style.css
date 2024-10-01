@@ -496,6 +496,7 @@ nav.active {
         padding: 20px;
         z-index: 1000;
         display: block;
+        
     }
 
     .sidebar nav {
@@ -522,18 +523,19 @@ nav.active {
         display: none;
     }
     #carouselImage{
-        display: block;
+        
         width: 100%;
     }
+    
     .carousel{
         display: block;
         width: 485px;
         height: 350px;
         left: 1;
-        margin-top: 10px;
+        top: 80px;
         z-index: 0;
         border-radius: 0;
-        position: relative;
+        position: absolute;
         padding: 0px;
     }
     .carousel-thumbnails{
@@ -541,13 +543,16 @@ nav.active {
     }
     .prev{
         left: 0;
+        top: 220px;
     }
     .next{
         right: 0;
+        top: 220px;
     }
     .product-image{
         display: none;
     }
+    
     .product-details{
         padding-left: 30px;
         position: absolute;
